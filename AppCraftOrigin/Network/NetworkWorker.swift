@@ -30,6 +30,7 @@ public class NetworkWorker {
                 
                 switch receivedResponse.statusCode {
                 case 200:
+                    // TODO: - Add support to case sensetive
                     if let ok = String(data: receivedData, encoding: .utf8), ok == "OK" {
                         self.activeTasks[taskAbsoluteString] = nil
                         completion(nil, receivedResponse, nil)
