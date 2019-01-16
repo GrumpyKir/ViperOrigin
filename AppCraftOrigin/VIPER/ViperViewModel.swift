@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class ViperViewModel {
+open class ViperViewModel {
     public var navigationTitle: String = ""
     public var emptyTitle: String = ""
 }

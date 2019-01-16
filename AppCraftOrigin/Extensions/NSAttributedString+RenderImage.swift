@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-extension NSAttributedString {
+public extension NSAttributedString {
     
     private func getCGSize(maxWidth: CGFloat) -> CGSize {
         let size = self.boundingRect(with: CGSize(width: maxWidth, height: 1000.0),
@@ -18,7 +18,7 @@ extension NSAttributedString {
         return size
     }
     
-    func renderAsImage(maxWidth: CGFloat) -> UIImage? {
+    public func renderAsImage(maxWidth: CGFloat) -> UIImage? {
         let size = self.getCGSize(maxWidth: maxWidth)
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)

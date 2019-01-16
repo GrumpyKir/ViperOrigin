@@ -9,9 +9,9 @@
 import Foundation
 import UIKit
 
-extension UIView {
+public extension UIView {
     
-    class func loadNib(withOwner owner: Any? = nil) -> Self {
+    public class func loadNib(withOwner owner: Any? = nil) -> Self {
         let name = String(describing: type(of: self)).components(separatedBy: ".")[0]
         let view = UINib(nibName: name, bundle: nil).instantiate(withOwner: owner, options: nil)[0]
         
@@ -19,7 +19,7 @@ extension UIView {
         return cast(view)!
     }
     
-    func loadFromNibIfEmbeddedInDifferentNib() -> Self {
+    public func loadFromNibIfEmbeddedInDifferentNib() -> Self {
         let isPlaceholder = subviews.isEmpty
         if isPlaceholder {
             let realView = type(of: self).loadNib()

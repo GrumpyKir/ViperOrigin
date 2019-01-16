@@ -8,21 +8,21 @@
 
 import Foundation
 
-extension Date {
+public extension Date {
     
-    func addMinutes(_ minutesToAdd: Double) -> Date {
+    public func addMinutes(_ minutesToAdd: Double) -> Date {
         let secondsInMinutes: TimeInterval = minutesToAdd * 60
         
         return self.addingTimeInterval(secondsInMinutes)
     }
     
-    func addHours(_ hoursToAdd: Double) -> Date {
+    public func addHours(_ hoursToAdd: Double) -> Date {
         let secondsInHours: TimeInterval = hoursToAdd * 60 * 60
         
         return self.addingTimeInterval(secondsInHours)
     }
     
-    func addDays(_ daysToAdd: Double) -> Date {
+    public func addDays(_ daysToAdd: Double) -> Date {
         let secondsInDays: TimeInterval = daysToAdd * 60 * 60 * 24
         
         return self.addingTimeInterval(secondsInDays)

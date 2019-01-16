@@ -9,13 +9,13 @@
 import Foundation
 import UIKit
 
-extension String {
+public extension String {
     
-    static func className(_ aClass: AnyClass) -> String {
+    public static func className(_ aClass: AnyClass) -> String {
         return NSStringFromClass(aClass).components(separatedBy: ".").last ?? ""
     }
     
-    var localized: String {
+    public var localized: String {
         return NSLocalizedString(self, comment: "")
     }
     

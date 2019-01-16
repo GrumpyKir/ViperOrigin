@@ -10,7 +10,7 @@ import UIKit
 
 open class OriginTableViewCell: UITableViewCell {
     
-    class var identifier: String {
+    class public var identifier: String {
         return String.className(self)        
     }
     

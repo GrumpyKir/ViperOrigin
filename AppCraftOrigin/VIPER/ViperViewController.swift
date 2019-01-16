@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-protocol ViperViewInputProtocol: AnyObject {
+public protocol ViperViewInputProtocol: AnyObject {
     func setupInitialState(with viewModel: ViperViewModel)
     func updateViewState(with viewModel: ViperViewModel)
     func updateViewState(with viewModel: ViperViewModel, animated: Bool)
@@ -20,7 +20,7 @@ protocol ViperViewInputProtocol: AnyObject {
     func show(_ alertController: UIAlertController, animated: Bool)
 }
 
-protocol ViperViewOutputProtocol: AnyObject {
+public protocol ViperViewOutputProtocol: AnyObject {
     func viewIsReady(_ controller: UIViewController)
     
     func loadData()
@@ -30,25 +30,25 @@ protocol ViperViewOutputProtocol: AnyObject {
     func close(_ controller: UIViewController, animated: Bool)
 }
 
-class ViperViewController: UIViewController, ViperViewInputProtocol {
+open class ViperViewController: UIViewController, ViperViewInputProtocol {
     
     // MARK: - Props
     public var _output: ViperViewOutputProtocol?
     
     // MARK: - Lifecycle
-    override func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
         
         self._output?.viewIsReady(self)
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    override open func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         setNeedsStatusBarAppearanceUpdate()
     }
     
-    override var preferredStatusBarStyle: UIStatusBarStyle {
+    override open var preferredStatusBarStyle: UIStatusBarStyle {
         return .default
     }
     
@@ -80,7 +80,7 @@ class ViperViewController: UIViewController, ViperViewInputProtocol {
         }
     }
     
-    public func show(title: String?, message: String?, animated: Bool) {
+    open func show(title: String?, message: String?, animated: Bool) {
         let alertController = UIAlertController(title: title,
                                                 message: message,
                                                 preferredStyle: .alert)
@@ -95,7 +95,7 @@ class ViperViewController: UIViewController, ViperViewInputProtocol {
         }
     }
     
-    public func show(_ alertController: UIAlertController, animated: Bool) {
+    open func show(_ alertController: UIAlertController, animated: Bool) {
         DispatchQueue.main.async { [weak self] in
             self?.present(alertController, animated: animated, completion: nil)
         }

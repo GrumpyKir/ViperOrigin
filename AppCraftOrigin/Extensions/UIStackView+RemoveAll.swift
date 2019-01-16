@@ -9,9 +9,9 @@
 import Foundation
 import UIKit
 
-extension UIStackView {
+public extension UIStackView {
     
-    func removeAllArrangedSubviews() {
+    public func removeAllArrangedSubviews() {
         for subview in self.arrangedSubviews {
             subview.removeFromSuperview()
         }

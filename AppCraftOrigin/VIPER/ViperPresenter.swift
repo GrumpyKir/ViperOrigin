@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-protocol ViperPresenterInputProtocol: AnyObject {
+public protocol ViperPresenterInputProtocol: AnyObject {
     var _view: ViperViewInputProtocol? { get set }
     var _interactor: ViperInteractorInputProtocol? { get set }
     var _router: ViperRouterInputProtocol? { get set }
@@ -17,43 +17,43 @@ protocol ViperPresenterInputProtocol: AnyObject {
     func updateViewModel(with data: Any)
 }
 
-class ViperPresenter: ViperPresenterInputProtocol, ViperViewOutputProtocol, ViperInteractorOutputProtocol {
+open class ViperPresenter: ViperPresenterInputProtocol, ViperViewOutputProtocol, ViperInteractorOutputProtocol {
     
     // MARK: - Props
-    var _view: ViperViewInputProtocol?
-    var _interactor: ViperInteractorInputProtocol?
-    var _router: ViperRouterInputProtocol?
+    public var _view: ViperViewInputProtocol?
+    public var _interactor: ViperInteractorInputProtocol?
+    public var _router: ViperRouterInputProtocol?
     
     // MARK: - Initialization
     init() { }
     
     // MARK: - ViperPresenterInputProtocol
-    func configure(with data: Any?) { }
+    open func configure(with data: Any?) { }
     
-    func updateViewModel(with data: Any) { }
+    open func updateViewModel(with data: Any) { }
     
     // MARK: - ViperViewOutputProtocol
-    func viewIsReady(_ controller: UIViewController) { }
+    open func viewIsReady(_ controller: UIViewController) { }
     
-    func loadData() { }
+    open func loadData() { }
     
-    func reloadData() { }
+    open func reloadData() { }
         
-    func goBack(_ controller: UIViewController, animated: Bool) {
+    open func goBack(_ controller: UIViewController, animated: Bool) {
         self._router?.goBack(from: controller, animated: animated)
     }
     
-    func close(_ controller: UIViewController, animated: Bool) {
+    open func close(_ controller: UIViewController, animated: Bool) {
         self._router?.dismiss(controller, animated: animated)
     }
     
     // MARK: - ViperInteractorOutputProtocol
-    func finishLoading(with error: Error?) {
+    open func finishLoading(with error: Error?) {
         self._view?.finishLoading(with: error)
     }
     
-    func setupData(with data: Any) { }
+    open func setupData(with data: Any) { }
     
-    func finishFavorite(instanceId: String) { }
+    open func finishFavorite(instanceId: String) { }
     
 }

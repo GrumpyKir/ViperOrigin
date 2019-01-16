@@ -9,9 +9,9 @@
 import Foundation
 import UIKit
 
-extension UIImage {
+public extension UIImage {
     
-    class func resizeImage(image: UIImage, newHeight: CGFloat) -> UIImage {
+    public class func resizeImage(image: UIImage, newHeight: CGFloat) -> UIImage {
         let scale = newHeight / image.size.height
         let newWidth = image.size.width * scale
         

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct UploadFileEntity {
+public struct UploadFileEntity {
     var filename: String
     var data: Data
     

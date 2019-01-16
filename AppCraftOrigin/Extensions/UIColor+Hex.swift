@@ -9,13 +9,13 @@
 import Foundation
 import UIKit
 
-extension UIColor {
+public extension UIColor {
     
-    convenience init(hex: String) {
+    public convenience init(hex: String) {
         self.init(hex: hex, alpha: 1)
     }
     
-    convenience init(hex: String, alpha: CGFloat) {
+    public convenience init(hex: String, alpha: CGFloat) {
         var hexWithoutSymbol = hex
         if hexWithoutSymbol.hasPrefix("#") {
             guard let sharpIndex = hexWithoutSymbol.firstIndex(of: "#") else {

@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-enum HTTPMethod: String {
+public enum HTTPMethod: String {
     case options = "OPTIONS"
     case get     = "GET"
     case head    = "HEAD"
@@ -24,7 +24,7 @@ enum HTTPMethod: String {
     }
 }
 
-enum URLRequestFactory {
+public enum URLRequestFactory {
     
     // MARK: - Public methods
     public static func create(path: String, parameters: [String: Any]?, headers: [String: String]?, method: HTTPMethod, postUrlEncoding: Bool = false) -> URLRequest? {

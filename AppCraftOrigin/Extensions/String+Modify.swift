@@ -9,13 +9,13 @@
 import Foundation
 import UIKit
 
-extension String {
+public extension String {
     
-    func trim() -> String {
+    public func trim() -> String {
         return self.trimmingCharacters(in: .whitespacesAndNewlines)
     }
     
-    func replace(_ target: String, with: String) -> String {
+    public func replace(_ target: String, with: String) -> String {
         return self.replacingOccurrences(of: target, with: with, options: NSString.CompareOptions.literal, range: nil)
     }
     

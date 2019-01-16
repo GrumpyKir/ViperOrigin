@@ -9,15 +9,15 @@
 import Foundation
 import UIKit
 
-extension UICollectionView {
+public extension UICollectionView {
     
-    func registerCellClass(_ cellClass: AnyClass) {
+    public func registerCellClass(_ cellClass: AnyClass) {
         let identifier = String.className(cellClass)
         
         self.register(cellClass, forCellWithReuseIdentifier: identifier)
     }
     
-    func registerCellNib(_ cellClass: AnyClass) {
+    public func registerCellNib(_ cellClass: AnyClass) {
         let identifier = String.className(cellClass)
         let nib = UINib(nibName: identifier, bundle: nil)
         

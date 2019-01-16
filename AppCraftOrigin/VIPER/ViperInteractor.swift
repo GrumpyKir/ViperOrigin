@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 import CoreData
 
-protocol ViperInteractorInputProtocol: AnyObject {
+public protocol ViperInteractorInputProtocol: AnyObject {
     var _output: ViperInteractorOutputProtocol? { get set }
     
     func configure(with data: Any?)
@@ -22,7 +22,7 @@ protocol ViperInteractorInputProtocol: AnyObject {
 //    func drop<T: NSManagedObject>() -> T?
 }
 
-protocol ViperInteractorOutputProtocol: AnyObject {
+public protocol ViperInteractorOutputProtocol: AnyObject {
     func finishLoading(with error: Error?)
     func setupData(with data: Any)
 }
@@ -31,9 +31,9 @@ open class ViperInteractor: ViperInteractorInputProtocol {
 //    private var networkWorker: NetworkWorker = NetworkWorker()
 //    private var coreDataWorker: CoreDataWorker = CoreDataWorker()
     
-    var _output: ViperInteractorOutputProtocol?
+    public var _output: ViperInteractorOutputProtocol?
 
-    func configure(with data: Any?) { }
+    open func configure(with data: Any?) { }
     
 //    public func perform<T: Codable>(_ request: URLRequest) -> T? {
 //        networkWorker.perform(request: request) { (result: T?, response, error) in

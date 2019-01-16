@@ -9,9 +9,9 @@
 import Foundation
 import UIKit
 
-extension UILabel {
+public extension UILabel {
     
-    func calculateMaxLines() -> Int {
+    public func calculateMaxLines() -> Int {
         let maxSize = CGSize(width: frame.size.width, height: CGFloat(Float.infinity))
         let charSize = font.lineHeight
         let text = (self.text ?? "") as NSString

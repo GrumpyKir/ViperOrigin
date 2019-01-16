@@ -9,9 +9,9 @@
 import Foundation
 import UIKit
 
-extension String {
+public extension String {
     
-    func addingPercentEncodingForUrlQueryValue() -> String? {
+    public func addingPercentEncodingForUrlQueryValue() -> String? {
         let generalDelimitersToEncode = ":#[]@"
         let subDelimitersToEncode = "!$&'()*+,;="
         

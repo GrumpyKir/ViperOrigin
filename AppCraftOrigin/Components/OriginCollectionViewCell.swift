@@ -10,7 +10,7 @@ import UIKit
 
 open class OriginCollectionViewCell: UICollectionViewCell {
     
-    class var identifier: String {
+    class public var identifier: String {
         return String.className(self)        
     }
     

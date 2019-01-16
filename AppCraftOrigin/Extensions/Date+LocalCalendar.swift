@@ -8,9 +8,9 @@
 
 import Foundation
 
-extension Date {
+public extension Date {
     
-    func toLocalDateTimeString() -> String {
+    public func toLocalDateTimeString() -> String {
         let date = self
         
         let calendar = NSCalendar.current
@@ -25,7 +25,7 @@ extension Date {
         return "\(String(format: "%02d", day)).\(String(format: "%02d", month)).\(year) \(String(format: "%02d", hour)):\(String(format: "%02d", minute))"
     }
     
-    func toLocalDateTimeWordsString() -> String {
+    public func toLocalDateTimeWordsString() -> String {
         let date = self
         
         let dateFormatter = DateFormatter()
@@ -36,7 +36,7 @@ extension Date {
         return dateFormatter.string(from: date)
     }
     
-    func toLocalDateString() -> String {
+    public func toLocalDateString() -> String {
         let date = self
         let calendar = NSCalendar.current
         
@@ -48,7 +48,7 @@ extension Date {
         return "\(String(format: "%02d", day)).\(String(format: "%02d", month)).\(year)"
     }
     
-    func toLocalWeekDayString() -> String {
+    public func toLocalWeekDayString() -> String {
         let date = self
         let calendar = NSCalendar.current
         
@@ -59,7 +59,7 @@ extension Date {
         return formatter.weekdaySymbols[weekDay - 1]
     }
     
-    func toLocalWeekDayIndex() -> Int {
+    public func toLocalWeekDayIndex() -> Int {
         let date = self
         let calendar = NSCalendar.current
         
@@ -68,7 +68,7 @@ extension Date {
         return weekDay - 1
     }
     
-    func toLocalTimeString() -> String {
+    public func toLocalTimeString() -> String {
         let date = self
         let calendar = NSCalendar.current
         
@@ -80,7 +80,7 @@ extension Date {
         return "\(String(format: "%02d", hour)):\(String(format: "%02d", minute)):\(String(format: "%02d", second))"
     }
     
-    func toLocalTimeShortString() -> String {
+    public func toLocalTimeShortString() -> String {
         let date = self
         let calendar = NSCalendar.current
         

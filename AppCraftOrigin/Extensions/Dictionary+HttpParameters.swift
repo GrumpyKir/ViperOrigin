@@ -8,9 +8,9 @@
 
 import Foundation
 
-extension Dictionary {
+public extension Dictionary {
     
-    func stringFromHttpParameters() -> String {
+    public func stringFromHttpParameters() -> String {
         let parameterArray = self.map { key, value -> String in
             var percentEscapedKey: String
             if let keyString = key as? String {
