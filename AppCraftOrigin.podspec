@@ -12,7 +12,6 @@ s.homepage = "https://github.com/GrumpyKir/ViperOrigin"
 s.source = { :git => "https://github.com/GrumpyKir/ViperOrigin.git",
 			 :tag => "#{s.version}" }
 s.framework = "UIKit"
-s.dependency 'ActionSheetPicker-3.0', '~> 2.3.0'
 s.source_files = "AppCraftOrigin/**/*.{swift}"
 s.swift_version = "4.2"
 
