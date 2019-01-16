@@ -25,7 +25,7 @@ open class ViperPresenter: ViperPresenterInputProtocol, ViperViewOutputProtocol,
     public var _router: ViperRouterInputProtocol?
     
     // MARK: - Initialization
-    init() { }
+    public init() { }
     
     // MARK: - ViperPresenterInputProtocol
     open func configure(with data: Any?) { }

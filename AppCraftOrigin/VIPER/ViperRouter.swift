@@ -16,6 +16,9 @@ public protocol ViperRouterInputProtocol: AnyObject {
 
 open class ViperRouter: ViperRouterInputProtocol {
     
+    // MARK: - Initialization
+    public init() { }
+    
     open func present(_ viewController: UIViewController, from parentController: UIViewController, animated: Bool) {
         DispatchQueue.main.async {
             parentController.present(viewController, animated: animated, completion: nil)

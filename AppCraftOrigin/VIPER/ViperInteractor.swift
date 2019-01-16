@@ -32,6 +32,9 @@ open class ViperInteractor: ViperInteractorInputProtocol {
 //    private var coreDataWorker: CoreDataWorker = CoreDataWorker()
     
     public var _output: ViperInteractorOutputProtocol?
+    
+    // MARK: - Initialization
+    public init() { }
 
     open func configure(with data: Any?) { }
     
