@@ -8,7 +8,7 @@ s.requires_arc = true
 s.version = "0.1.0"
 s.license = { :type => "MIT", :file => "LICENSE" }
 s.author = { "Opekishev Kirill" => "grumpykir@gmail.com" }
-s.homepage = "https://github.com/TheCodedSelf/RWPickFlavor"
+s.homepage = "https://github.com/GrumpyKir/ViperOrigin"
 s.source = { :git => "https://github.com/GrumpyKir/ViperOrigin",
 :tag => "#{s.version}" }
 s.framework = "UIKit"
