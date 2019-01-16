@@ -7,13 +7,77 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74836CF259D78AD7FE08D93F /* Pods_AppCraftOrigin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4E73927C9C3F7249999C74C /* Pods_AppCraftOrigin.framework */; };
 		ED2EE18721EF61BC00AF1F9A /* AppCraftOrigin.h in Headers */ = {isa = PBXBuildFile; fileRef = ED2EE18521EF61BC00AF1F9A /* AppCraftOrigin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED2EE19321EF62F100AF1F9A /* ViperInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2EE18E21EF62F100AF1F9A /* ViperInteractor.swift */; };
+		ED2EE19421EF62F100AF1F9A /* ViperPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2EE18F21EF62F100AF1F9A /* ViperPresenter.swift */; };
+		ED2EE19521EF62F100AF1F9A /* ViperRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2EE19021EF62F100AF1F9A /* ViperRouter.swift */; };
+		ED2EE19621EF62F100AF1F9A /* ViperViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2EE19121EF62F100AF1F9A /* ViperViewModel.swift */; };
+		ED2EE19721EF62F100AF1F9A /* ViperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2EE19221EF62F100AF1F9A /* ViperViewController.swift */; };
+		ED2EE19D21EF632800AF1F9A /* OriginCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2EE19B21EF632800AF1F9A /* OriginCollectionViewCell.swift */; };
+		ED2EE19E21EF632800AF1F9A /* OriginTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2EE19C21EF632800AF1F9A /* OriginTableViewCell.swift */; };
+		ED2EE1A221EF633000AF1F9A /* NetworkWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2EE19F21EF633000AF1F9A /* NetworkWorker.swift */; };
+		ED2EE1A321EF633000AF1F9A /* UploadFileEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2EE1A021EF633000AF1F9A /* UploadFileEntity.swift */; };
+		ED2EE1A421EF633000AF1F9A /* URLRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2EE1A121EF633000AF1F9A /* URLRequestFactory.swift */; };
+		ED2EE1B921EF633C00AF1F9A /* String+Modify.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2EE1A521EF633A00AF1F9A /* String+Modify.swift */; };
+		ED2EE1BA21EF633C00AF1F9A /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2EE1A621EF633B00AF1F9A /* UIColor+Hex.swift */; };
+		ED2EE1BB21EF633C00AF1F9A /* UIViewController+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2EE1A721EF633B00AF1F9A /* UIViewController+Identifier.swift */; };
+		ED2EE1BC21EF633C00AF1F9A /* String+Origin.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2EE1A821EF633B00AF1F9A /* String+Origin.swift */; };
+		ED2EE1BD21EF633C00AF1F9A /* UITableView+RegisterClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2EE1A921EF633B00AF1F9A /* UITableView+RegisterClasses.swift */; };
+		ED2EE1BE21EF633C00AF1F9A /* UIApplication+TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2EE1AA21EF633B00AF1F9A /* UIApplication+TopViewController.swift */; };
+		ED2EE1BF21EF633C00AF1F9A /* UIImageView+ImageColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2EE1AB21EF633B00AF1F9A /* UIImageView+ImageColor.swift */; };
+		ED2EE1C021EF633C00AF1F9A /* String+Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2EE1AC21EF633B00AF1F9A /* String+Validation.swift */; };
+		ED2EE1C121EF633C00AF1F9A /* Data+Modify.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2EE1AD21EF633B00AF1F9A /* Data+Modify.swift */; };
+		ED2EE1C221EF633C00AF1F9A /* NSAttributedString+RenderImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2EE1AE21EF633B00AF1F9A /* NSAttributedString+RenderImage.swift */; };
+		ED2EE1C321EF633C00AF1F9A /* Date+LocalCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2EE1AF21EF633B00AF1F9A /* Date+LocalCalendar.swift */; };
+		ED2EE1C421EF633C00AF1F9A /* Dictionary+HttpParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2EE1B021EF633B00AF1F9A /* Dictionary+HttpParameters.swift */; };
+		ED2EE1C521EF633C00AF1F9A /* UICollectionView+RegisterClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2EE1B121EF633C00AF1F9A /* UICollectionView+RegisterClasses.swift */; };
+		ED2EE1C621EF633C00AF1F9A /* UILabel+MaxLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2EE1B221EF633C00AF1F9A /* UILabel+MaxLines.swift */; };
+		ED2EE1C721EF633C00AF1F9A /* UIView+LoadNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2EE1B321EF633C00AF1F9A /* UIView+LoadNib.swift */; };
+		ED2EE1C821EF633C00AF1F9A /* Data+MimeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2EE1B421EF633C00AF1F9A /* Data+MimeType.swift */; };
+		ED2EE1C921EF633C00AF1F9A /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2EE1B521EF633C00AF1F9A /* UIImage+Resize.swift */; };
+		ED2EE1CA21EF633C00AF1F9A /* String+URLQueryValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2EE1B621EF633C00AF1F9A /* String+URLQueryValue.swift */; };
+		ED2EE1CB21EF633C00AF1F9A /* Date+Modify.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2EE1B721EF633C00AF1F9A /* Date+Modify.swift */; };
+		ED2EE1CC21EF633C00AF1F9A /* UIStackView+RemoveAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2EE1B821EF633C00AF1F9A /* UIStackView+RemoveAll.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08FD57D8B3D724500EAA5E01 /* Pods-AppCraftOrigin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppCraftOrigin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppCraftOrigin/Pods-AppCraftOrigin.debug.xcconfig"; sourceTree = "<group>"; };
+		B4E73927C9C3F7249999C74C /* Pods_AppCraftOrigin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppCraftOrigin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBD737AE593BDD6CD9CD83FC /* Pods-AppCraftOrigin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppCraftOrigin.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppCraftOrigin/Pods-AppCraftOrigin.release.xcconfig"; sourceTree = "<group>"; };
 		ED2EE18221EF61BC00AF1F9A /* AppCraftOrigin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AppCraftOrigin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED2EE18521EF61BC00AF1F9A /* AppCraftOrigin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppCraftOrigin.h; sourceTree = "<group>"; };
 		ED2EE18621EF61BC00AF1F9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED2EE18E21EF62F100AF1F9A /* ViperInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperInteractor.swift; sourceTree = "<group>"; };
+		ED2EE18F21EF62F100AF1F9A /* ViperPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperPresenter.swift; sourceTree = "<group>"; };
+		ED2EE19021EF62F100AF1F9A /* ViperRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperRouter.swift; sourceTree = "<group>"; };
+		ED2EE19121EF62F100AF1F9A /* ViperViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperViewModel.swift; sourceTree = "<group>"; };
+		ED2EE19221EF62F100AF1F9A /* ViperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperViewController.swift; sourceTree = "<group>"; };
+		ED2EE19B21EF632800AF1F9A /* OriginCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OriginCollectionViewCell.swift; sourceTree = "<group>"; };
+		ED2EE19C21EF632800AF1F9A /* OriginTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OriginTableViewCell.swift; sourceTree = "<group>"; };
+		ED2EE19F21EF633000AF1F9A /* NetworkWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkWorker.swift; sourceTree = "<group>"; };
+		ED2EE1A021EF633000AF1F9A /* UploadFileEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadFileEntity.swift; sourceTree = "<group>"; };
+		ED2EE1A121EF633000AF1F9A /* URLRequestFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLRequestFactory.swift; sourceTree = "<group>"; };
+		ED2EE1A521EF633A00AF1F9A /* String+Modify.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Modify.swift"; sourceTree = "<group>"; };
+		ED2EE1A621EF633B00AF1F9A /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		ED2EE1A721EF633B00AF1F9A /* UIViewController+Identifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Identifier.swift"; sourceTree = "<group>"; };
+		ED2EE1A821EF633B00AF1F9A /* String+Origin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Origin.swift"; sourceTree = "<group>"; };
+		ED2EE1A921EF633B00AF1F9A /* UITableView+RegisterClasses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+RegisterClasses.swift"; sourceTree = "<group>"; };
+		ED2EE1AA21EF633B00AF1F9A /* UIApplication+TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+TopViewController.swift"; sourceTree = "<group>"; };
+		ED2EE1AB21EF633B00AF1F9A /* UIImageView+ImageColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+ImageColor.swift"; sourceTree = "<group>"; };
+		ED2EE1AC21EF633B00AF1F9A /* String+Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Validation.swift"; sourceTree = "<group>"; };
+		ED2EE1AD21EF633B00AF1F9A /* Data+Modify.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Modify.swift"; sourceTree = "<group>"; };
+		ED2EE1AE21EF633B00AF1F9A /* NSAttributedString+RenderImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+RenderImage.swift"; sourceTree = "<group>"; };
+		ED2EE1AF21EF633B00AF1F9A /* Date+LocalCalendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+LocalCalendar.swift"; sourceTree = "<group>"; };
+		ED2EE1B021EF633B00AF1F9A /* Dictionary+HttpParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+HttpParameters.swift"; sourceTree = "<group>"; };
+		ED2EE1B121EF633C00AF1F9A /* UICollectionView+RegisterClasses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+RegisterClasses.swift"; sourceTree = "<group>"; };
+		ED2EE1B221EF633C00AF1F9A /* UILabel+MaxLines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+MaxLines.swift"; sourceTree = "<group>"; };
+		ED2EE1B321EF633C00AF1F9A /* UIView+LoadNib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+LoadNib.swift"; sourceTree = "<group>"; };
+		ED2EE1B421EF633C00AF1F9A /* Data+MimeType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+MimeType.swift"; sourceTree = "<group>"; };
+		ED2EE1B521EF633C00AF1F9A /* UIImage+Resize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Resize.swift"; sourceTree = "<group>"; };
+		ED2EE1B621EF633C00AF1F9A /* String+URLQueryValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+URLQueryValue.swift"; sourceTree = "<group>"; };
+		ED2EE1B721EF633C00AF1F9A /* Date+Modify.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Modify.swift"; sourceTree = "<group>"; };
+		ED2EE1B821EF633C00AF1F9A /* UIStackView+RemoveAll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStackView+RemoveAll.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,17 +85,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74836CF259D78AD7FE08D93F /* Pods_AppCraftOrigin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C323B2DF507D5C9D9A691E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4E73927C9C3F7249999C74C /* Pods_AppCraftOrigin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D0A48D8885CFEA6AE2E86460 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				08FD57D8B3D724500EAA5E01 /* Pods-AppCraftOrigin.debug.xcconfig */,
+				BBD737AE593BDD6CD9CD83FC /* Pods-AppCraftOrigin.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		ED2EE17821EF61BC00AF1F9A = {
 			isa = PBXGroup;
 			children = (
 				ED2EE18421EF61BC00AF1F9A /* AppCraftOrigin */,
 				ED2EE18321EF61BC00AF1F9A /* Products */,
+				D0A48D8885CFEA6AE2E86460 /* Pods */,
+				7C323B2DF507D5C9D9A691E9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -48,8 +132,70 @@
 			children = (
 				ED2EE18521EF61BC00AF1F9A /* AppCraftOrigin.h */,
 				ED2EE18621EF61BC00AF1F9A /* Info.plist */,
+				ED2EE18D21EF62E300AF1F9A /* VIPER */,
+				ED2EE19A21EF630F00AF1F9A /* Components */,
+				ED2EE19821EF630300AF1F9A /* Network */,
+				ED2EE19921EF630900AF1F9A /* Extensions */,
 			);
 			path = AppCraftOrigin;
+			sourceTree = "<group>";
+		};
+		ED2EE18D21EF62E300AF1F9A /* VIPER */ = {
+			isa = PBXGroup;
+			children = (
+				ED2EE19221EF62F100AF1F9A /* ViperViewController.swift */,
+				ED2EE18E21EF62F100AF1F9A /* ViperInteractor.swift */,
+				ED2EE18F21EF62F100AF1F9A /* ViperPresenter.swift */,
+				ED2EE19121EF62F100AF1F9A /* ViperViewModel.swift */,
+				ED2EE19021EF62F100AF1F9A /* ViperRouter.swift */,
+			);
+			path = VIPER;
+			sourceTree = "<group>";
+		};
+		ED2EE19821EF630300AF1F9A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				ED2EE19F21EF633000AF1F9A /* NetworkWorker.swift */,
+				ED2EE1A021EF633000AF1F9A /* UploadFileEntity.swift */,
+				ED2EE1A121EF633000AF1F9A /* URLRequestFactory.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		ED2EE19921EF630900AF1F9A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ED2EE1B421EF633C00AF1F9A /* Data+MimeType.swift */,
+				ED2EE1AD21EF633B00AF1F9A /* Data+Modify.swift */,
+				ED2EE1AF21EF633B00AF1F9A /* Date+LocalCalendar.swift */,
+				ED2EE1B721EF633C00AF1F9A /* Date+Modify.swift */,
+				ED2EE1B021EF633B00AF1F9A /* Dictionary+HttpParameters.swift */,
+				ED2EE1AE21EF633B00AF1F9A /* NSAttributedString+RenderImage.swift */,
+				ED2EE1A521EF633A00AF1F9A /* String+Modify.swift */,
+				ED2EE1A821EF633B00AF1F9A /* String+Origin.swift */,
+				ED2EE1B621EF633C00AF1F9A /* String+URLQueryValue.swift */,
+				ED2EE1AC21EF633B00AF1F9A /* String+Validation.swift */,
+				ED2EE1AA21EF633B00AF1F9A /* UIApplication+TopViewController.swift */,
+				ED2EE1B121EF633C00AF1F9A /* UICollectionView+RegisterClasses.swift */,
+				ED2EE1A621EF633B00AF1F9A /* UIColor+Hex.swift */,
+				ED2EE1B521EF633C00AF1F9A /* UIImage+Resize.swift */,
+				ED2EE1AB21EF633B00AF1F9A /* UIImageView+ImageColor.swift */,
+				ED2EE1B221EF633C00AF1F9A /* UILabel+MaxLines.swift */,
+				ED2EE1B821EF633C00AF1F9A /* UIStackView+RemoveAll.swift */,
+				ED2EE1A921EF633B00AF1F9A /* UITableView+RegisterClasses.swift */,
+				ED2EE1B321EF633C00AF1F9A /* UIView+LoadNib.swift */,
+				ED2EE1A721EF633B00AF1F9A /* UIViewController+Identifier.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ED2EE19A21EF630F00AF1F9A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				ED2EE19B21EF632800AF1F9A /* OriginCollectionViewCell.swift */,
+				ED2EE19C21EF632800AF1F9A /* OriginTableViewCell.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,6 +216,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED2EE18A21EF61BC00AF1F9A /* Build configuration list for PBXNativeTarget "AppCraftOrigin" */;
 			buildPhases = (
+				D5F90AD8570EB61D7D93973B /* [CP] Check Pods Manifest.lock */,
 				ED2EE17D21EF61BC00AF1F9A /* Headers */,
 				ED2EE17E21EF61BC00AF1F9A /* Sources */,
 				ED2EE17F21EF61BC00AF1F9A /* Frameworks */,
@@ -95,6 +242,7 @@
 				TargetAttributes = {
 					ED2EE18121EF61BC00AF1F9A = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -125,11 +273,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D5F90AD8570EB61D7D93973B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AppCraftOrigin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ED2EE17E21EF61BC00AF1F9A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED2EE19321EF62F100AF1F9A /* ViperInteractor.swift in Sources */,
+				ED2EE1CA21EF633C00AF1F9A /* String+URLQueryValue.swift in Sources */,
+				ED2EE1C821EF633C00AF1F9A /* Data+MimeType.swift in Sources */,
+				ED2EE1BB21EF633C00AF1F9A /* UIViewController+Identifier.swift in Sources */,
+				ED2EE1A321EF633000AF1F9A /* UploadFileEntity.swift in Sources */,
+				ED2EE1A421EF633000AF1F9A /* URLRequestFactory.swift in Sources */,
+				ED2EE19E21EF632800AF1F9A /* OriginTableViewCell.swift in Sources */,
+				ED2EE1BD21EF633C00AF1F9A /* UITableView+RegisterClasses.swift in Sources */,
+				ED2EE1C521EF633C00AF1F9A /* UICollectionView+RegisterClasses.swift in Sources */,
+				ED2EE1A221EF633000AF1F9A /* NetworkWorker.swift in Sources */,
+				ED2EE19621EF62F100AF1F9A /* ViperViewModel.swift in Sources */,
+				ED2EE1CC21EF633C00AF1F9A /* UIStackView+RemoveAll.swift in Sources */,
+				ED2EE19721EF62F100AF1F9A /* ViperViewController.swift in Sources */,
+				ED2EE1C221EF633C00AF1F9A /* NSAttributedString+RenderImage.swift in Sources */,
+				ED2EE1C621EF633C00AF1F9A /* UILabel+MaxLines.swift in Sources */,
+				ED2EE1C321EF633C00AF1F9A /* Date+LocalCalendar.swift in Sources */,
+				ED2EE1C921EF633C00AF1F9A /* UIImage+Resize.swift in Sources */,
+				ED2EE1C021EF633C00AF1F9A /* String+Validation.swift in Sources */,
+				ED2EE19521EF62F100AF1F9A /* ViperRouter.swift in Sources */,
+				ED2EE19D21EF632800AF1F9A /* OriginCollectionViewCell.swift in Sources */,
+				ED2EE1BC21EF633C00AF1F9A /* String+Origin.swift in Sources */,
+				ED2EE1C721EF633C00AF1F9A /* UIView+LoadNib.swift in Sources */,
+				ED2EE1CB21EF633C00AF1F9A /* Date+Modify.swift in Sources */,
+				ED2EE1BA21EF633C00AF1F9A /* UIColor+Hex.swift in Sources */,
+				ED2EE19421EF62F100AF1F9A /* ViperPresenter.swift in Sources */,
+				ED2EE1B921EF633C00AF1F9A /* String+Modify.swift in Sources */,
+				ED2EE1BE21EF633C00AF1F9A /* UIApplication+TopViewController.swift in Sources */,
+				ED2EE1BF21EF633C00AF1F9A /* UIImageView+ImageColor.swift in Sources */,
+				ED2EE1C121EF633C00AF1F9A /* Data+Modify.swift in Sources */,
+				ED2EE1C421EF633C00AF1F9A /* Dictionary+HttpParameters.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +459,9 @@
 		};
 		ED2EE18B21EF61BC00AF1F9A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08FD57D8B3D724500EAA5E01 /* Pods-AppCraftOrigin.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -270,14 +471,16 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = AppCraftOrigin/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = AppCraft.AppCraftOrigin;
+				PRODUCT_BUNDLE_IDENTIFIER = com.origin.appcraft;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,7 +488,9 @@
 		};
 		ED2EE18C21EF61BC00AF1F9A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBD737AE593BDD6CD9CD83FC /* Pods-AppCraftOrigin.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -295,12 +500,13 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = AppCraftOrigin/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = AppCraft.AppCraftOrigin;
+				PRODUCT_BUNDLE_IDENTIFIER = com.origin.appcraft;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
