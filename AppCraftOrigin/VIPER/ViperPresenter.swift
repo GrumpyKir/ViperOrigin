@@ -7,7 +7,6 @@
 
 import Foundation
 import UIKit
-import ActionSheetPicker_3_0
 
 protocol ViperPresenterInputProtocol: AnyObject {
     var _view: ViperViewInputProtocol? { get set }

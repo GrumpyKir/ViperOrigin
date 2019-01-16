@@ -7,7 +7,6 @@
 
 import Foundation
 import UIKit
-import ActionSheetPicker_3_0
 
 protocol ViperViewInputProtocol: AnyObject {
     func setupInitialState(with viewModel: ViperViewModel)
@@ -19,7 +18,6 @@ protocol ViperViewInputProtocol: AnyObject {
     
     func show(title: String?, message: String?, animated: Bool)
     func show(_ alertController: UIAlertController, animated: Bool)
-    func show(_ picker: AbstractActionSheetPicker)
 }
 
 protocol ViperViewOutputProtocol: AnyObject {
@@ -100,12 +98,6 @@ class ViperViewController: UIViewController, ViperViewInputProtocol {
     public func show(_ alertController: UIAlertController, animated: Bool) {
         DispatchQueue.main.async { [weak self] in
             self?.present(alertController, animated: animated, completion: nil)
-        }
-    }
-    
-    public func show(_ picker: AbstractActionSheetPicker) {
-        DispatchQueue.main.async {
-            picker.show()
         }
     }
     
