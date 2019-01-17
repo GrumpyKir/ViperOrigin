@@ -9,44 +9,51 @@ import Foundation
 import UIKit
 
 public protocol ViperRouterInputProtocol: AnyObject {
-    func dismiss(_ viewController: UIViewController, animated: Bool)
-    func goBack(from viewController: UIViewController, animated: Bool)
-    func goToRoot(from viewController: UIViewController, animated: Bool)
+    var _mainController: UIViewController? { get set }
+    
+    func dismiss(animated: Bool)
+    func goBack(animated: Bool)
+    func goToRoot(animated: Bool)
 }
 
 open class ViperRouter: ViperRouterInputProtocol {
     
+    // MARK: - Props
+    public var _mainController: UIViewController?
+    
     // MARK: - Initialization
     public init() { }
     
-    open func present(_ viewController: UIViewController, from parentController: UIViewController, animated: Bool) {
+    // MARK: - ViperRouterInputProtocol
+    open func dismiss(animated: Bool) {
         DispatchQueue.main.async {
-            parentController.present(viewController, animated: animated, completion: nil)
+            self._mainController?.dismiss(animated: animated, completion: nil)
         }
     }
     
-    open func push(to viewController: UIViewController, from parentController: UIViewController, animated: Bool) {
+    open func goBack(animated: Bool) {
         DispatchQueue.main.async {
-            parentController.navigationController?.pushViewController(viewController, animated: animated)
+            self._mainController?.navigationController?.popViewController(animated: animated)
         }
     }
     
-    open func dismiss(_ viewController: UIViewController, animated: Bool) {
+    open func goToRoot(animated: Bool) {
         DispatchQueue.main.async {
-            viewController.dismiss(animated: animated, completion: nil)
+            self._mainController?.navigationController?.popToRootViewController(animated: animated)
         }
     }
     
-    open func goBack(from viewController: UIViewController, animated: Bool) {
+    // MARK: - Public functions
+    public func present(_ viewController: UIViewController, animated: Bool) {
         DispatchQueue.main.async {
-            viewController.navigationController?.popViewController(animated: animated)
+            self._mainController?.present(viewController, animated: animated, completion: nil)
         }
     }
     
-    open func goToRoot(from viewController: UIViewController, animated: Bool) {
+    public func push(to viewController: UIViewController, animated: Bool) {
         DispatchQueue.main.async {
-            viewController.navigationController?.popToRootViewController(animated: animated)
+            self._mainController?.navigationController?.pushViewController(viewController, animated: animated)
         }
     }
-    
+        
 }

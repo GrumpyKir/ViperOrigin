@@ -198,6 +198,7 @@ identifier_name:
     - _router
     - _input
     - _output
+    - _mainController
 implicit_getter:
   severity: warning
 implicit_return:
