@@ -26,8 +26,8 @@ public protocol ViperViewOutputProtocol: AnyObject {
     func loadData()
     func reloadData()
     
-    func goBack(_ controller: UIViewController, animated: Bool)
-    func close(_ controller: UIViewController, animated: Bool)
+    func goBack(animated: Bool)
+    func close(animated: Bool)
 }
 
 open class ViperViewController: UIViewController, ViperViewInputProtocol {

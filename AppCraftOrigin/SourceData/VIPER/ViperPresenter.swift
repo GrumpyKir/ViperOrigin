@@ -39,12 +39,12 @@ open class ViperPresenter: ViperPresenterInputProtocol, ViperViewOutputProtocol,
     
     open func reloadData() { }
         
-    open func goBack(_ controller: UIViewController, animated: Bool) {
-        self._router?.goBack(from: controller, animated: animated)
+    open func goBack(animated: Bool) {
+        self._router?.goBack(animated: animated)
     }
     
-    open func close(_ controller: UIViewController, animated: Bool) {
-        self._router?.dismiss(controller, animated: animated)
+    open func close(animated: Bool) {
+        self._router?.dismiss(animated: animated)
     }
     
     // MARK: - ViperInteractorOutputProtocol

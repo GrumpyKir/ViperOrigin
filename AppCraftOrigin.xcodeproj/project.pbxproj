@@ -132,10 +132,7 @@
 			children = (
 				ED2EE18521EF61BC00AF1F9A /* AppCraftOrigin.h */,
 				ED2EE18621EF61BC00AF1F9A /* Info.plist */,
-				ED2EE18D21EF62E300AF1F9A /* VIPER */,
-				ED2EE19A21EF630F00AF1F9A /* Components */,
-				ED2EE19821EF630300AF1F9A /* Network */,
-				ED2EE19921EF630900AF1F9A /* Extensions */,
+				ED2EE1CE21F0853900AF1F9A /* SourceData */,
 			);
 			path = AppCraftOrigin;
 			sourceTree = "<group>";
@@ -198,6 +195,17 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		ED2EE1CE21F0853900AF1F9A /* SourceData */ = {
+			isa = PBXGroup;
+			children = (
+				ED2EE18D21EF62E300AF1F9A /* VIPER */,
+				ED2EE19A21EF630F00AF1F9A /* Components */,
+				ED2EE19821EF630300AF1F9A /* Network */,
+				ED2EE19921EF630900AF1F9A /* Extensions */,
+			);
+			path = SourceData;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -221,6 +229,7 @@
 				ED2EE17E21EF61BC00AF1F9A /* Sources */,
 				ED2EE17F21EF61BC00AF1F9A /* Frameworks */,
 				ED2EE18021EF61BC00AF1F9A /* Resources */,
+				ED2EE1CD21EF77ED00AF1F9A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -291,6 +300,23 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		ED2EE1CD21EF77ED00AF1F9A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
