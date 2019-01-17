@@ -132,10 +132,7 @@
 			children = (
 				ED2EE18521EF61BC00AF1F9A /* AppCraftOrigin.h */,
 				ED2EE18621EF61BC00AF1F9A /* Info.plist */,
-				ED2EE18D21EF62E300AF1F9A /* VIPER */,
-				ED2EE19A21EF630F00AF1F9A /* Components */,
-				ED2EE19821EF630300AF1F9A /* Network */,
-				ED2EE19921EF630900AF1F9A /* Extensions */,
+				ED2EE1CE21F0853900AF1F9A /* SourceData */,
 			);
 			path = AppCraftOrigin;
 			sourceTree = "<group>";
@@ -196,6 +193,17 @@
 				ED2EE19C21EF632800AF1F9A /* OriginTableViewCell.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		ED2EE1CE21F0853900AF1F9A /* SourceData */ = {
+			isa = PBXGroup;
+			children = (
+				ED2EE18D21EF62E300AF1F9A /* VIPER */,
+				ED2EE19A21EF630F00AF1F9A /* Components */,
+				ED2EE19821EF630300AF1F9A /* Network */,
+				ED2EE19921EF630900AF1F9A /* Extensions */,
+			);
+			path = SourceData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
