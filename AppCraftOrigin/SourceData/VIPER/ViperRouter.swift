@@ -43,14 +43,14 @@ open class ViperRouter: ViperRouterInputProtocol {
         }
     }
     
-    // MARK: - Public functions
-    public func present(_ viewController: UIViewController, animated: Bool) {
+    // MARK: - Module functions
+    open func present(_ viewController: UIViewController, animated: Bool) {
         DispatchQueue.main.async {
             self._mainController?.present(viewController, animated: animated, completion: nil)
         }
     }
     
-    public func push(to viewController: UIViewController, animated: Bool) {
+    open func push(to viewController: UIViewController, animated: Bool) {
         DispatchQueue.main.async {
             self._mainController?.navigationController?.pushViewController(viewController, animated: animated)
         }

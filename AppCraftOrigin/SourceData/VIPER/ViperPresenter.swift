@@ -52,8 +52,4 @@ open class ViperPresenter: ViperPresenterInputProtocol, ViperViewOutputProtocol,
         self._view?.finishLoading(with: error)
     }
     
-    open func setupData(with data: Any) { }
-    
-    open func finishFavorite(instanceId: String) { }
-    
 }
