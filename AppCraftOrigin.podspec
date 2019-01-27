@@ -5,7 +5,7 @@ s.ios.deployment_target = '10.0'
 s.name = "AppCraftOrigin"
 s.summary = "Basic classes to work with VIPER arch"
 s.requires_arc = true
-s.version = "0.3.3"
+s.version = "0.3.4"
 s.license = { :type => "MIT", :file => "LICENSE" }
 s.author = { "Opekishev Kirill" => "grumpykir@gmail.com" }
 s.homepage = "https://github.com/GrumpyKir/ViperOrigin"

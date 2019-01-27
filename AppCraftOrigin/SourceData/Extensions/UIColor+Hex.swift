@@ -15,6 +15,7 @@ public extension UIColor {
         self.init(hex: hex, alpha: 1)
     }
     
+    // TODO: - Not working, need to fix
     public convenience init(hex: String, alpha: CGFloat) {
         var hexWithoutSymbol = hex
         if hexWithoutSymbol.hasPrefix("#") {

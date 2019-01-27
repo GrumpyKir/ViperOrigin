@@ -39,6 +39,7 @@ public enum URLRequestFactory {
                 return self.createRequestWithBodyParameters(path: path, parameters: parameters, headers: headers, method: method.stringValue)
             }
         case .put,
+             .patch,
              .delete:
             return self.createRequestWithBodyParameters(path: path, parameters: parameters, headers: headers, method: method.stringValue)
         default:

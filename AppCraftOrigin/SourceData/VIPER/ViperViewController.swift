@@ -58,7 +58,9 @@ open class ViperViewController: UIViewController, ViperViewInputProtocol {
         navigationItem.title = viewModel.navigationTitle
     }
     
-    open func updateViewState(with viewModel: ViperViewModel) { }
+    public func updateViewState(with viewModel: ViperViewModel) {
+        self.updateViewState(with: viewModel, animated: false)
+    }
     
     open func updateViewState(with viewModel: ViperViewModel, animated: Bool) { }
     
