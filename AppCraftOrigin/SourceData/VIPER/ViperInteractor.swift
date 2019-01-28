@@ -35,7 +35,7 @@ open class ViperInteractor: ViperInteractorInputProtocol {
     open func configure(with data: Any?) { }
     
     // MARK: - Module functions
-    open func execute<T: Codable>(_ request: URLRequest, onSuccess: @escaping (_ result: T?, _ response: URLResponse?) -> Void, onError: @escaping (_ error: Error?, _ response: URLResponse?) -> Void) {
+    open func execute<T: Codable>(_ request: URLRequest, onSuccess: @escaping (_ result: T?, _ response: URLResponse?) -> Void, onError: @escaping (_ error: Error?, _ response: URLResponse?) -> Void) -> T? {
         self.networkWorker.execute(request) { (result: T?, response, error) in
             self._output?.finishLoading(with: error)
             
@@ -50,5 +50,7 @@ open class ViperInteractor: ViperInteractorInputProtocol {
                 onError(error, response)
             }
         }
+        
+        return nil
     }
 }
