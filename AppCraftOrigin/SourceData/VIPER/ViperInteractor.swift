@@ -17,6 +17,7 @@ public protocol ViperInteractorInputProtocol: AnyObject {
 
 public protocol ViperInteractorOutputProtocol: AnyObject {
     func finishLoading(with error: Error?)
+    func provideMessage(_ title: String?, message: String?)
 }
 
 open class ViperInteractor: ViperInteractorInputProtocol {
@@ -36,7 +37,7 @@ open class ViperInteractor: ViperInteractorInputProtocol {
     
     // MARK: - Module functions
     open func execute<T: Codable>(_ request: URLRequest, onSuccess: @escaping (_ result: T?, _ response: URLResponse?) -> Void, onError: @escaping (_ error: Error?, _ response: URLResponse?) -> Void) -> T? {
-        self.networkWorker.execute(request) { (result: T?, response, error) in            
+        self.networkWorker.execute(request) { (result: T?, response, error) in
             if let receivedResponse = response as? HTTPURLResponse {
                 switch receivedResponse.statusCode {
                 case 200:

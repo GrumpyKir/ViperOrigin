@@ -52,4 +52,8 @@ open class ViperPresenter: ViperPresenterInputProtocol, ViperViewOutputProtocol,
         self._view?.finishLoading(with: error)
     }
     
+    open func provideMessage(_ title: String?, message: String?) {
+        self._view?.show(title: title, message: message, animated: true)
+    }
+    
 }
