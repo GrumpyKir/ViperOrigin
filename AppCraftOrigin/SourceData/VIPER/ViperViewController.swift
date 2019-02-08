@@ -10,7 +10,6 @@ import UIKit
 
 public protocol ViperViewInputProtocol: AnyObject {
     func setupInitialState(with viewModel: ViperViewModel)
-    func updateViewState(with viewModel: ViperViewModel)
     func updateViewState(with viewModel: ViperViewModel, animated: Bool)
     
     func beginLoading()
@@ -18,6 +17,14 @@ public protocol ViperViewInputProtocol: AnyObject {
     
     func show(title: String?, message: String?, animated: Bool)
     func show(_ alertController: UIAlertController, animated: Bool)
+}
+
+public extension ViperViewInputProtocol {
+    
+    func updateViewState(with viewModel: ViperViewModel, animated: Bool = false) {
+        return self.updateViewState(with: viewModel, animated: animated)
+    }
+    
 }
 
 public protocol ViperViewOutputProtocol: AnyObject {

@@ -48,6 +48,10 @@ open class ViperPresenter: ViperPresenterInputProtocol, ViperViewOutputProtocol,
     }
     
     // MARK: - ViperInteractorOutputProtocol
+    open func beginLoading() {
+        self._view?.beginLoading()
+    }
+    
     open func finishLoading(with error: Error?) {
         self._view?.finishLoading(with: error)
     }

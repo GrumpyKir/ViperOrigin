@@ -43,7 +43,7 @@ public enum URLRequestFactory {
              .delete:
             return self.createRequestWithBodyParameters(path: path, parameters: parameters, headers: headers, method: method.stringValue)
         default:
-            // TODO: - Add support to other http methods
+            // TODO: Add support to other http methods
             break
         }
         

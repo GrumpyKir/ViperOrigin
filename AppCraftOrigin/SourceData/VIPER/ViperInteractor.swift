@@ -16,6 +16,7 @@ public protocol ViperInteractorInputProtocol: AnyObject {
 }
 
 public protocol ViperInteractorOutputProtocol: AnyObject {
+    func beginLoading()
     func finishLoading(with error: Error?)
     func provideMessage(_ title: String?, message: String?)
 }
